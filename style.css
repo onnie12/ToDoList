@@ -1,81 +1,71 @@
 .todolist{
     color: black;
-    font-family:"Encode Sans", "consolas", sans-serif;
+    font-family: "Encode Sans", "consolas", sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    position: fixed;
-     top: 300px;
-     left: 620px;
-     z-index: 1;
+    font-size: 1vw;
+    z-index: 1;
+    display: flex;
+    margin-left: 20px;
 }
 
-.first{
+
+body{
     background: linear-gradient(to left, purple, blueviolet,violet);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .box{
-    height: 254px;
-    width: 681px;
+    height: 30vh;
+    width: 40vw;
     background-color: white;
-    position: fixed;
-    left: 600px;
-    top: 300px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
     z-index: 0;
     border-radius: 25px;
+    
+
 }
-button{
-background-color: violet;
-color: white;
-font-family:"Encode Sans", "consolas", sans-serif;
-border: none;
-font-size: 50px;
-height: 100px;
-width: 165px;
-border-radius: 50px;
-z-index: 1;
-position: fixed;
-left: 1020px;
-top: 400px;
+.add{
+    background-color: violet;
+    color: white;
+    font-family: "Encode Sans", "consolas", sans-serif;
+    border: none;
+    font-size: 3vw;
+    height: 10.8vh;
+    width: 10vw;
+    border-radius: 50px;
+    z-index: 1;
+    position: absolute;
+    left: 73.5%;
+    top: 55%;
+    transform: translate(-50%, -50%);
 
 }
 .box2{
-    height: 100px;
-    width: 500px;
+    height: 11vh;
+    width: 30vw;
     background-color: grey;
-    position: fixed;
-    left: 685px;
-    top: 400px;
+    position: absolute;
+    left: 48.5%;
+    top: 55%;
+    transform: translate(-50%, -50%);
     border-radius: 50px;
 }
 .addtask{
-    position: fixed;
-    left: 735px;
-    top: 410px;
-    font-family:"Encode Sans", "consolas", sans-serif;
+    position: absolute;
+    left: 26%;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    font-family: "Encode Sans", "consolas", sans-serif;
+    font-size: 1.2vw;
+    margin: 1em;
 }
-.bg{
-    background: linear-gradient(to left,white,#79cac1, #78c3ed);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.mytasks{
-    color: black;
-    font-family:"Encode Sans", "consolas", sans-serif;
-    font-weight: bold;
-    font-size: 50px;
-    position: fixed;
-     top: 80px;
-     left: 825px;
-     z-index: 1;
-}
-.pg2box{
-    height: 120px;
-    width: 600px;
-    background-color: white;
-    position: fixed;
-    left: 635px;
-    top: 50px;
-    z-index: 0;
-    border-radius: 25px;
+.checkmark{
+    margin-top: 10px;
+    margin-left: 30px;
+    max-width: 75px;
+    max-height: 75px;
+    transform: translateX(-50%); 
 }
