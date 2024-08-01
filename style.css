@@ -9,7 +9,7 @@
 }
 
 
-body{
+#page1{
     background: linear-gradient(to left, purple, blueviolet,violet);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -27,7 +27,7 @@ body{
     
 
 }
-.add{
+#add{
     background-color: violet;
     color: white;
     font-family: "Encode Sans", "consolas", sans-serif;
@@ -41,6 +41,7 @@ body{
     left: 73.5%;
     top: 55%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
 
 }
 .box2{
@@ -69,3 +70,67 @@ body{
     max-height: 75px;
     transform: translateX(-50%); 
 }
+.popup{
+    width: 710px;
+    height: 300px;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    z-index: 2;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup h2{
+    font-family: "Encode sans", "consolas", sans-serif;
+    font-size: 55px;
+    margin: 30px 0 10px;
+}
+.popup button{
+    font-size: 50px;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    font-family: "Encode sans", "consolas", sans-serif;
+    background-color: violet;
+    color: white;
+}
+.popup input{
+    margin-top: 20px;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+#close{
+    color: black;
+    font-weight: bold;
+}
+#page2{
+    background: linear-gradient(to left, lightblue, lightgreen, turquoise);
+}
+#return{
+    font-size: 35px;
+    margin-top: 20px;
+    padding: 10px 0;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: "Encode sans", "consolas", sans-serif;
+    margin-top: 20px;
+    padding: 10px 15px;
+}
+
