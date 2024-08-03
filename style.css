@@ -1,4 +1,4 @@
-.todolist{
+.todolist {
     color: black;
     font-family: "Encode Sans", "consolas", sans-serif;
     font-weight: bold;
@@ -8,13 +8,13 @@
     margin-left: 20px;
 }
 
-
-#page1{
-    background: linear-gradient(to left, purple, blueviolet,violet);
+#page1 {
+    background: linear-gradient(to left, purple, blueviolet, violet);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.box{
+
+.box {
     height: 30vh;
     width: 40vw;
     background-color: white;
@@ -24,10 +24,9 @@
     transform: translate(-50%, -50%);
     z-index: 0;
     border-radius: 25px;
-    
-
 }
-#add{
+
+#add {
     background-color: violet;
     color: white;
     font-family: "Encode Sans", "consolas", sans-serif;
@@ -38,39 +37,46 @@
     border-radius: 50px;
     z-index: 1;
     position: absolute;
-    left: 73.5%;
+    right: 8%;
     top: 55%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     cursor: pointer;
-
 }
-.box2{
+
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 11vh;
     width: 30vw;
     background-color: grey;
     position: absolute;
-    left: 48.5%;
+    left: 50%;
     top: 55%;
     transform: translate(-50%, -50%);
     border-radius: 50px;
+    padding: 0 20px;
+    z-index: -1;
 }
-.addtask{
-    position: absolute;
-    left: 26%;
-    top: 46%;
-    transform: translate(-50%, -50%);
+
+.addtask {
     font-family: "Encode Sans", "consolas", sans-serif;
     font-size: 1.2vw;
-    margin: 1em;
+    z-index: 2;
+    left: 20%;
+    position: absolute;
+    top: 100px;
+    left: 60px;
 }
-.checkmark{
-    margin-top: 10px;
+
+.checkmark {
     margin-left: 30px;
     max-width: 75px;
-    max-height: 75px;
-    transform: translateX(-50%); 
+    max-height: 70px;
+    transform: translateX(-50%);
 }
-.popup{
+
+.popup {
     width: 710px;
     height: 300px;
     background-color: white;
@@ -85,17 +91,20 @@
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
 }
-.open-popup{
+
+.open-popup {
     visibility: visible;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
 }
-.popup h2{
+
+.popup h2 {
     font-family: "Encode sans", "consolas", sans-serif;
     font-size: 55px;
     margin: 30px 0 10px;
 }
-.popup button{
+
+.popup button {
     font-size: 50px;
     margin-top: 20px;
     padding: 10px 10px;
@@ -107,7 +116,8 @@
     background-color: violet;
     color: white;
 }
-.popup input{
+
+.popup input {
     margin-top: 20px;
     width: 50%;
     padding: 12px 20px;
@@ -115,14 +125,17 @@
     box-sizing: border-box;
     border-radius: 20px;
 }
-#close{
+
+#close {
     color: black;
     font-weight: bold;
 }
-#page2{
+
+#page2 {
     background: linear-gradient(to left, lightblue, lightgreen, turquoise);
 }
-#return{
+
+#return {
     font-size: 35px;
     margin-top: 20px;
     padding: 10px 0;
@@ -134,3 +147,38 @@
     padding: 10px 15px;
 }
 
+li {
+    font-family: "Encode sans", "consolas", sans-serif;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#box {
+    position: absolute;
+    resize: horizontal;
+}
+
+#delButton {
+    font-size: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: red;
+    cursor: pointer;
+    font-family: "Encode sans", "consolas", sans-serif;
+    font-weight: bold;
+    padding: 5px 12px;
+}
+
+.delbutton {
+    background-color: red;
+    width: 18px;
+    height: 18px;
+    border: none;
+    border-radius: 20px;
+    padding: 3px;
+    margin-left: 7px;
+}
+
+.box {
+    height: 20vw;
+}
